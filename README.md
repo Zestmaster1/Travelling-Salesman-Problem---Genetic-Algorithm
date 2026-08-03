@@ -11,7 +11,6 @@ Algorithm Details
 - Objects can be dragged around and the algorithm keeps evolving in real time
 
 Evolution
-- The gene pool defines the top number of individuals that will be bred in the next generation
 - Tournament selection
 - One-cut permutation crossover
 - Random index swap mutation + 2opt mutation, random chance of either
