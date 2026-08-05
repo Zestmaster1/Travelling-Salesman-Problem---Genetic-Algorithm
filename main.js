@@ -106,8 +106,8 @@ function step() {
 
     let childPath = crossover(parent1, parent2);
 
-    if (Math.random() < 0.4) mutateSwap(childPath);
-    if (Math.random() < 0.4) mutate2opt(childPath);
+    if (Math.random() < 0.25) mutateSwap(childPath);
+    if (Math.random() < 0.25) mutate2opt(childPath);
 
     childPath = childPath.filter(x => x !== 0);
     childPath.unshift(0);
