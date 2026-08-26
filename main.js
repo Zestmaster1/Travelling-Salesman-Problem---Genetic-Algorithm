@@ -1,5 +1,5 @@
 const numObjects = 30;
-const numInds = 2000;
+const numInds = 500;
 let allInds = [];
 let allObjects = [];
 
@@ -106,8 +106,8 @@ function step() {
 
     let childPath = crossover(parent1, parent2);
 
-    if (Math.random() < 0.25) mutateSwap(childPath);
-    if (Math.random() < 0.25) mutate2opt(childPath);
+    if (Math.random() < 0.2) mutateSwap(childPath);
+    if (Math.random() < 0.2) mutate2opt(childPath);
 
     childPath = childPath.filter(x => x !== 0);
     childPath.unshift(0);
@@ -208,7 +208,7 @@ function draw() {
   }
 
   if (showPopulation) {
-    ctx.strokeStyle = "rgba(0, 0, 0, 0.007)";
+    ctx.strokeStyle = "rgba(0, 0, 0, 0.015)";
 
     for (let ind of allInds) {
       for (let i = 0; i < ind.path.length; i++) {
